@@ -4,7 +4,7 @@
 #include <fcntl.h>
 
 unsigned short getbit(unsigned short bits, int index);
-int getshift(int index);
+int getshiftp10(int index);
 unsigned short circleftshift5bits(unsigned short bits);
 unsigned short getleft5bits(unsigned short bits);
 unsigned short getright5bits(unsigned short bits);
@@ -12,6 +12,7 @@ unsigned short combine5bits(unsigned short bitsleft, unsigned short bitsright);
 unsigned short getinkey(char * binary, int size);
 unsigned short permute(unsigned short bits, int arr[], int size, int shift10);
 int getshift8(int index);
+int getshift4(int index);
 unsigned short getF(unsigned short bits, unsigned short sk);
 unsigned short s0(unsigned short bits, unsigned short a[][4]);
 unsigned short getleft4bits(unsigned short bits);
